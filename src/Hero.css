@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.hero .first{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .first img{
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.hero .first > div{
+  z-index: 1;
+  padding: 70px 60px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hero .first > div > div:nth-child(2){
+    margin-block: 20px;
+    font-size: 70px;
+    line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.hero .first > div > div:nth-child(2) p:nth-child(2){
+    font-size: 100px;
+    color: #384b45;
+    font-family: "Arapey", serif;
+    font-style: italic;
+}
+
+.hero .first > div > p:nth-child(3),.hero .first > div > p:nth-child(4){
+    margin-bottom: 5px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-right: 50%;
+}
+
+.hero .first > div > p:nth-child(1){
+    font-family: "Baskervville", serif;
+    font-style: normal;
+}
+
+.hero .first .buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.hero .first .buttons button{
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: 1px solid #384b45;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.hero .first .buttons button:hover{
+    transform: scale(1.06);
+    transition: transform 0.5s ease;
+}
+
+.hero .first .buttons button:nth-child(1){
+    background-color: #384b45;
+    color: white;
+}
+
+.hero .first div:nth-child(6) p:nth-child(2){
+    font-family: "Arapey", serif;
+    transform: scaleX(1.2);
+}
+.hero .first div:nth-child(6) p:nth-child(1){
+    width: 30px;
+    border: 2px solid #384b45;
+    border-radius: 15px;
+    transform: rotateZ(270deg);
+    background-color: antiquewhite;
+    margin: 40px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hero .first div:nth-child(6){
+    position: relative;
+    padding-top: 35px;
+    display: flex;
+    align-items: end;
+}
+
+.hero .first div:nth-child(6)::before{
+    position: absolute;
+    content: "";
+    left: 16.5px;
+    top: 20px;
+    height: 40px;
+    border: 1px solid #384b45;
+    background-color: #384b45;
+}

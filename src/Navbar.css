@@ -1,0 +1,70 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f7f0d6;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0px 5px 10px #dccc8b;
+}
+
+.navbar > .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.navbar .phone{
+    display: none;
+    position: relative;
+    padding-right: 10px;
+}
+
+.navbar .phone > div:nth-child(1){
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.navbar .phone > div:nth-child(1)>svg:nth-child(2){
+    font-size: 25px;
+}
+
+.navbar .phone > div:nth-child(2){
+   position: absolute;
+   background-color: rgb(41, 97, 78);
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   top: 40px;
+   right: 10px;
+   height: 0;
+   overflow-y: hidden;
+   opacity: 0;
+   transition: height 1s ease,opacity 1s ease;
+}
+
+.navbar .phone > div:nth-child(2).full{
+   height: 120px;
+   opacity: 1;
+   transition: height 1s ease,opacity 1s ease;
+}
+
+
+.navbar .phone > div:nth-child(2) p,.navbar .phone > div:nth-child(1),.navbar > .desktop p,.navbar > .desktop svg{
+    cursor: pointer;
+}
+
+@media (max-width:750px) {
+    .navbar > .desktop{
+        display: none;
+    }
+
+    .navbar .phone{
+        display: block;
+    }
+}
