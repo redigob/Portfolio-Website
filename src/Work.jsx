@@ -1,40 +1,113 @@
 import { Link } from 'react-router-dom';
-
+import './Work.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookOpen, faBriefcase, faCloudSun } from '@fortawesome/free-solid-svg-icons'
+ 
 const Work = () => {
     return (
         <div className="work">
-            <h2>Things I have brought to life</h2>
-            <p>A collection of Projects I've built while learning, experimenting, and turning ideas into working applications.</p>
+            <h2>Projects I have built</h2>
+            <p>A collection of ideas turned into working digital experience</p>
             <div>
-                <div>
-                    <img src=""/>
-                    <h2>Lumora</h2>
-                    <p>Blog platform</p>
-                    <p>React · Javascript · css</p>
-                    <Link to={""}>Live Demo ↗</Link>
+                <div className='project1'>
+                   <img src="/images/Jobnova.png"></img>
+                   <div>
+                        <p>01</p>
+                        <h2>JobNova</h2>
+                        <p>A job platform that helps people discover opportunities aligned with their skills and goals.</p>
+                        <div className='skills'>
+                           <p>React</p>
+                           <p>JavaScript</p>
+                           <p>CSS</p>
+                        </div>
+                        <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                        </div>
+                   </div>
                 </div>
-                <div>
-                    <img src=""/>
-                    <h2>JobNova</h2>
-                    <p>Job discovery platform</p>
-                    <p>React · Javascript · css</p>
-                    <Link to={""}>Live Demo ↗</Link>
+
+                <div className='project2'>
+                  <p>02</p>
+                  <img src='/images/lumora.png'></img>
+                  <h2>Lumora</h2>
+                  <p>A clean blog platform to explore stories, ideas and knowledge</p>
+                  <div className='skills'>
+                           <p>React</p>
+                           <p>JavaScript</p>
+                           <p>CSS</p>
+                        </div>
+                    <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                    </div>
                 </div>
-                <div>
-                    <img src=""/>
-                    <h2>Calculator</h2>
-                    <p>Utility application</p>
-                    <p>HTML · CSS · JavaScript</p>
-                    <Link to={""}>Live Demo ↗</Link>
+
+                <div className='project3'>
+                  <p>03</p>
+                  <img src='/images/Weather.png'></img>
+                  <h2>Weather App</h2>
+                  <p>Get real-time weather updates with a simple and clean interface.</p>
+                  <div className='skills'>
+                           <p>React</p>
+                           <p>JavaScript</p>
+                           <p>CSS</p>
+                  </div>
+                  <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                  </div>
                 </div>
-                <div>
-                    <img src=""/>
-                    <h2>Weather App</h2>
-                    <p>Weather application</p>
-                    <p>HTML · CSS · JavaScript</p>
-                    <Link to={""}>Live Demo ↗</Link>
+
+                <div className='project3'>
+                  <p>04</p>
+                  <img src='/images/Calculator.png'></img>
+                  <h2>Calculator</h2>
+                  <p>A clean, fucntional calculator with a simple UI.</p>
+                  <div className='skills'>
+                           <p>React</p>
+                           <p>JavaScript</p>
+                           <p>CSS</p>
+                  </div>
+                  <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                  </div>
+                </div>
+ 
+                <div className='project3'>
+                  <p>05</p>
+                  <img src='/images/Todo.png'></img>
+                  <h2>To-Do List</h2>
+                  <p>A simple tool for organizing your tasks.</p>
+                  <div className='skills'>
+                           <p>HTML</p>
+                           <p>CSS</p>
+                           <p>JavaScript</p>
+                  </div>
+                  <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                  </div>
+                </div>
+
+                <div className='project3'>
+                  <p>06</p>
+                  <img src='/images/Quiz.png'></img>
+                  <h2>Quiz App</h2>
+                  <p>An interactive knowledge-testing experience.</p>
+                  <div className='skills'>
+                           <p>HTML</p>
+                           <p>CSS</p>
+                           <p>JavaScript</p>
+                  </div>
+                  <div className='links'>
+                            <Link className='link' to={""}>Live Demo ↗</Link>
+                            <Link className='link' to={""}>Source Code ↗</Link>
+                  </div>
                 </div>
             </div>
+            <p>MORE IDEAS. MORE BUILDS</p>
         </div>
     );
 }

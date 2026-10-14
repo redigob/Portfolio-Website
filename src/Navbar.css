@@ -6,7 +6,8 @@
     margin: 10px;
     border-radius: 30px;
     font-size: 20px;
-    box-shadow: 0px 5px 10px #dccc8b;
+    box-shadow: 0px 5px 10px #ebdeba,
+                inset 0px -4px 6px #cdc4aaab;
 }
 
 .navbar > .desktop{
@@ -35,7 +36,8 @@
 
 .navbar .phone > div:nth-child(2){
    position: absolute;
-   background-color: rgb(41, 97, 78);
+   background-color: rgb(219, 202, 181);
+   z-index: 1;
    padding: 10px 20px;
    display: flex;
    flex-direction: column;
@@ -49,7 +51,7 @@
 }
 
 .navbar .phone > div:nth-child(2).full{
-   height: 120px;
+   height: 110px;
    opacity: 1;
    transition: height 1s ease,opacity 1s ease;
 }
@@ -66,5 +68,33 @@
 
     .navbar .phone{
         display: block;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar > p:nth-child(1){
+        font-size: 15px;
+    }
+
+    .navbar .phone > div:nth-child(1),.navbar .phone > div:nth-child(1) > svg:nth-child(2){
+        font-size: 18px;
+    }
+}
+@media (max-width:450px) {
+    .navbar .phone > div:nth-child(2).full {
+        font-size: 15px;
+        height: 85px;
+    }
+}
+
+@media (max-width:330px) {
+    .navbar .phone > div:nth-child(2).full {
+        font-size: 10px;
+        height: 60px;
+        padding: 10px;
     }
 }

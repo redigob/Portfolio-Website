@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+.work{
+    border-block: 1px solid rgb(122, 101, 74);
+    padding: 30px 4%;
+}
+
+.work > h2{
+    font-size: 30px;
+    color: #434342;
+    font-family: "Playfair Display", serif;
+}
+
+.project1{
+    border-radius: 10px;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #e2d3c1;
+    padding: 15px;
+    gap: 60px;
+}
+
+.project2,.project3,.project4,.project5,.project6{
+    background-color: #e2d3c1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project1 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 15px 0px 0px;
+}
+
+.project1 > div > p:nth-child(1){
+    color: #2e492e;
+}
+
+.project1 > img{
+    border: 15px solid #95b0953b;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #a39e9e;
+    height: 90%;
+    align-self: center;
+
+}
+
+.project1 > div > h2{
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+}
+
+.project1 > div > p:nth-child(3){
+    font-size: 16px;
+    font-family: "Baskervville";
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+    margin-top:10px ;
+}
+
+.links .link{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #2e492e;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.links .link:nth-child(1){
+    background:linear-gradient(50deg,#2e492e,#5a7e5a,#2e492e,#5a7e5a) ;
+    color: rgb(245, 244, 244);
+}
+
+.skills{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills p{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.work > p{
+    font-size: 20px;
+}
+
+.work > div{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-top: 2px solid #c9b297;
+    padding-top: 20px;
+}
+
+.work > div > div > h2{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.work > div > div > p:nth-child(4){
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: "Baskervville";
+}
+
+
+.work > div > div img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #615f5f;
+}
+
+.work > div > div > p:nth-child(1){
+    margin-bottom: 5px;
+    color: #3f3f3f;
+}
+
+.work > p:last-child{
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+@keyframes typing {
+    0%{
+        width: 0px;
+    }
+
+    50%{
+        width: 500px;
+    }
+
+    100%{
+        width: 0px;
+    }
+}
+
+@media (max-width:1100px) {
+    .work > p{
+        font-size: 15px;
+    }
+
+    .work > h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:920px) {
+    .work {
+        padding: 30px 3%;
+    }
+    .project1 > div > h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:845px) {
+    .project1 .skills{
+        margin-top: 0px;
+    }
+
+    .project1 .links{
+        margin-top: 0px;
+    }
+
+    .project1 > img{
+        height: fit-content;
+    }
+
+    .project1 > div > p:nth-child(1){
+        margin-bottom: -10px;
+    }
+
+    .project1 > div{
+        gap:6px ;
+    }
+
+    .skills p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:800px) {
+    .work > div{
+        gap: 10px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .work > h2{
+        font-size: 23px;
+    }
+
+    .links .link{
+        font-size: 12px;
+    }
+
+    .project1 > div > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .project1 > div > h2{
+        font-size: 20px;
+    }
+
+     .project1 > div{
+        gap: 5px;
+     }
+    .project1 > div > p:nth-child(1){
+        margin-bottom: -3px;
+    }
+
+    .skills,.links{
+       margin-top: 5px;
+    }
+
+    .project1{
+        gap: 50px;
+    }
+
+}
+
+@media (max-width:600px) {
+    
+    .work > h2{
+        font-size: 20px;
+    }
+
+    .work{
+        font-size: 15px;
+        padding: 20px 3%;
+    }
+
+    .work > div{
+        margin-top: 20px;
+    }
+
+    .work > div > div{
+        grid-column: span 2;
+    }
+
+    .project1{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position: relative;
+        padding: 35px 15px 15px;
+    }
+
+
+    .work > div > div img {
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .project1 > div > p:nth-child(1){
+        position: absolute;
+        top: 10px;
+    }
+
+    .project1 > div > p:nth-child(3){
+        font-size: 15px;
+    }
+
+     .project1 .links,.links{
+        margin-top: 20px;
+     }
+
+    .links .link{
+        font-size: 15;
+     }
+
+}
+
+
+@media (max-width:480px) {
+    .work > h2{
+        font-size: 18px;
+    }
+
+    .work>p{
+       font-size: 13px;
+    }
+
+    .work > div > div > h2,.project1 >  div > h2{
+        font-size: 18px;
+    }
+
+     .work{
+        padding: 10px 1%;
+     }
+
+}
+
+@media (max-width:450px) {
+    .work > div{
+        grid-template-columns: 1fr;
+    }
+
+    .project1 > div > p:nth-child(3){
+       font-size: 12px;
+    }
+
+    .project1 .links,.links{
+        margin-top: 10px;
+     }
+}
+
+
+@media (max-width:330px) {
+    .work > h2{
+        font-size: 15px;
+    }
+    .work > p{
+        font-size: 12px;
+    }
+    .project1{
+        padding: 35px 10px 10px;
+    }
+
+    .work > div > div:not(:first-child){
+        padding: 10px;
+    }
+}
+
+@media (max-width:350px) {
+    .skills{
+        gap: 5px;
+    }
+    .skills p{
+        font-size: 10px;
+    }
+}

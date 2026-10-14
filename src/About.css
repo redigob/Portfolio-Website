@@ -1,0 +1,124 @@
+.about{
+    border-bottom: 1px solid rgb(122, 101, 74);
+    padding: 30px 3.5%;
+}
+
+.about > p:nth-child(1){
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #434342;
+}
+
+.about > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    padding: 0px 0px 20px 0px;
+    border-block: 2px solid #c9b297;
+}
+
+.about > div:nth-child(2) .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 180px 0px 0px;
+    font-size: 20px;
+}
+
+.about > div:nth-child(2) .left p:nth-child(1){
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.about > div:nth-child(2) .left p:nth-child(4){
+    margin-top: 50px;
+}
+
+.about > div:nth-child(2) .left p:nth-child(1) span{
+    color: rgb(106, 160, 103);
+    
+}
+
+.about > div:nth-child(2) .right {
+    padding: 10px 0px;
+}
+
+
+.about > div:nth-child(2) .right img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.about > div:nth-child(3){
+    padding: 20px 0px;
+    font-size: 18px;
+}
+
+.about > div:nth-child(3) > p:nth-child(1){
+    font-size: 15px;
+    color: #4b4a49;
+}
+
+.about > div:nth-child(3) > h2:nth-child(2){ 
+    margin-block: 10px;
+}
+
+.about > div:nth-child(3) > div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about > div:nth-child(3) > div > div{
+    display: flex;
+    gap: 10px;
+}
+
+.about > div:nth-child(3) > div > div svg{
+    padding: 5px;
+    background-color: #cdcccc;
+    border-radius: 20%;
+}
+
+.about > div:nth-child(4){
+    border-top: 2px solid #c9b297;
+    padding: 20px 0px;
+}
+
+.about > div:nth-child(4) > p:nth-child(1){
+    font-size: 15px;
+    color: #5b5a59;
+    margin-bottom: 10px;
+}
+
+.about > div:nth-child(4) ul {
+   list-style: none;
+   display: flex;
+   gap: 10px;
+}
+
+.about > div:nth-child(4) ul li{
+    border:1px solid #939292 ;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.about > div:nth-child(4) div{
+    width: 600px;
+    background-color: #c8c8c8a3;
+    padding: 20px 15px 20px 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about > div:nth-child(4) div p:nth-child(3){
+    color: #2424e1;
+    text-decoration: underline;
+    cursor: pointer;
+}

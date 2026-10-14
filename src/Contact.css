@@ -1,0 +1,77 @@
+.contact {
+    padding: 30px 4%;
+    font-size: 18px;
+}
+
+.contact > p:nth-child(1){
+    font-size: 30px;
+    border-bottom: 2px solid #c9b297;
+    padding-bottom: 10px;
+}
+
+.contact > div > p:nth-child(1){
+    font-size: 20px;
+    margin-block: 10px 20px;
+}
+
+.contact > div > div{
+    border-top: 2px solid #c9b297;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.left > p:nth-child(1){
+    color: #616161;
+    font-size: 15px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.left div{
+    padding: 20px 0px;
+    border-bottom: 1px solid #c9b297;
+}
+
+.left > div > p:nth-child(3){
+    cursor: pointer;
+}
+
+.right > p:nth-child(1){
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.right > p:nth-child(2){
+    font-size: 17px;
+    margin-bottom: 10px;
+    color:#616161 ;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+}
+
+.right form input,.right textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #616161;
+    resize: none;
+}
+
+.right form button{
+    padding: 8px;
+    font-size: 16px;
+    background-color: #384b45;
+    border-radius: 20px;
+    border: 1px solid #616161;
+    color: white;
+}
