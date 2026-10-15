@@ -1,16 +1,28 @@
 .navbar{
+    background-color: #ebdeba;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0px 0px;
+}
+
+.navbarinside p{
+    cursor: pointer;
+}
+
+.navbarinside{
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
     background-color: #f7f0d6;
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     border-radius: 30px;
     font-size: 20px;
     box-shadow: 0px 5px 10px #ebdeba,
                 inset 0px -4px 6px #cdc4aaab;
 }
 
-.navbar > .desktop{
+.navbarinside > .desktop{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,23 +30,23 @@
     padding-right: 20px;
 }
 
-.navbar .phone{
+.navbarinside .phone{
     display: none;
     position: relative;
     padding-right: 10px;
 }
 
-.navbar .phone > div:nth-child(1){
+.navbarinside .phone > div:nth-child(1){
    display: flex;
    align-items: center;
    gap: 20px;
 }
 
-.navbar .phone > div:nth-child(1)>svg:nth-child(2){
+.navbarinside .phone > div:nth-child(1)>svg:nth-child(2){
     font-size: 25px;
 }
 
-.navbar .phone > div:nth-child(2){
+.navbarinside .phone > div:nth-child(2){
    position: absolute;
    background-color: rgb(219, 202, 181);
    z-index: 1;
@@ -50,51 +62,70 @@
    transition: height 1s ease,opacity 1s ease;
 }
 
-.navbar .phone > div:nth-child(2).full{
+.navbarinside .phone > div:nth-child(2).full{
    height: 110px;
    opacity: 1;
    transition: height 1s ease,opacity 1s ease;
 }
 
-
-.navbar .phone > div:nth-child(2) p,.navbar .phone > div:nth-child(1),.navbar > .desktop p,.navbar > .desktop svg{
+.navbarinside .phone > div:nth-child(2) p,.navbar .phone > div:nth-child(1),.navbar > .desktop p,.navbar > .desktop svg{
     cursor: pointer;
 }
 
 @media (max-width:750px) {
-    .navbar > .desktop{
+    .navbarinside > .desktop{
         display: none;
     }
 
-    .navbar .phone{
+    .navbarinside .phone{
         display: block;
     }
 }
 
 @media (max-width:500px) {
-    .navbar {
+    .navbarinside {
         padding: 10px 15px;
     }
 
-    .navbar > p:nth-child(1){
+    .navbarinside > p:nth-child(1){
         font-size: 15px;
     }
 
-    .navbar .phone > div:nth-child(1),.navbar .phone > div:nth-child(1) > svg:nth-child(2){
+    .navbarinside .phone > div:nth-child(1),.navbar .phone > div:nth-child(1) > svg:nth-child(2){
         font-size: 18px;
     }
 }
 @media (max-width:450px) {
-    .navbar .phone > div:nth-child(2).full {
+    .navbarinside .phone > div:nth-child(2).full {
         font-size: 15px;
         height: 85px;
+    }
+    .navbarinside .phone > div:nth-child(2) {
+        font-size: 15px;
+    }
+    .navbarinside > p:nth-child(1){
+        font-size: 14px;
     }
 }
 
 @media (max-width:330px) {
-    .navbar .phone > div:nth-child(2).full {
+    .navbarinside{
+        margin-top: 5px;
+    }
+    .navbarinside .phone > div:nth-child(2).full {
         font-size: 10px;
         height: 60px;
         padding: 10px;
+    }
+
+    .navbarinside .phone > div:nth-child(2) {
+        font-size: 10px;
+    }
+    .navbarinside > p:nth-child(1){
+        font-size: 13px;
+    }
+
+    .phone svg{
+        font-size: 13px;
     }
 }

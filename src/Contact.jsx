@@ -1,12 +1,13 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Contact.css'
+import { Link } from "react-router-dom";
+
 const Contact = () => {
     return (
         <div className="contact">
             <p>Get in Touch</p>
             <div>
-                <p>Have an idea? <span>Let's build Something.</span></p>
                 <p>I'm always interested in connecting with people who care about building useful digital experiences.</p>
                 <p>Whether you have an opportunity, a project idea, or simply want to connect, I'd love to hear from you.</p>
                 
@@ -17,19 +18,19 @@ const Contact = () => {
                         <div>
                             <p>Email</p>
                             <p>For opportunities and inquiries</p>
-                            <p>redietgob@gmail.com</p>
+                            <a href="mailto:redietgob@gmail.com">Send an Email ↗</a>
                         </div>
 
                         <div>
                             <p>GitHub</p>
                             <p>Explore my projects and code</p>
-                            <p>github.com/redigob </p>
+                            <a href='https://github.com/redigob' target="_blank" rel="noopener noreferrer" >Explore GitHub ↗</a>
                         </div>
 
                         <div>
                             <p>LinkedIn</p>
                             <p>Let's connect professionally</p>
-                            <p>Connect with me ↗</p>
+                            <a href="www.linkedin.com/in/rediet-gobezie-a21b59283" target="_blank">Connect with me ↗</a>
                         </div>
                     </div>
 
@@ -38,7 +39,7 @@ const Contact = () => {
                        <p>Have somthing in mind? Tell me a little about it.</p>
                        
                        <form action="https://formspree.io/f/mrpeynjz" method="POST">
-                        <label htmlFor="name">Your name</label>
+                        <label htmlFor="name">Name</label>
                         <input 
                           type="text"
                           id="name"
@@ -47,7 +48,7 @@ const Contact = () => {
                           required
                         />
 
-                        <label htmlFor="email">Your Email</label>
+                        <label htmlFor="email">Email</label>
                         <input 
                           type="email"
                           id="name"

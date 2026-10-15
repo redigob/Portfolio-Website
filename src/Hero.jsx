@@ -1,5 +1,5 @@
 import './Hero.css'
-const Hero = () => {
+const Hero = ({scrollToSection}) => {
     return (
         <div className="hero">
             <div className='first'>
@@ -14,8 +14,8 @@ const Hero = () => {
                     <p>I enjoy solving problems, exploring new technologies, and bringing ideas to life through code.</p>
                 
                     <div className='buttons'>
-                        <button>View My Work</button>
-                        <button>About Me</button>
+                        <button onClick={()=>scrollToSection("work")}>View My Work</button>
+                        <button onClick={()=>scrollToSection("about")}>About Me</button>
                     </div>
 
                     <div>

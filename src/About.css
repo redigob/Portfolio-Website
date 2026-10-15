@@ -1,17 +1,19 @@
 .about{
     border-bottom: 1px solid rgb(122, 101, 74);
-    padding: 30px 3.5%;
+    padding: 15px 3.5% 30px;
+    scroll-margin-top: 70px;
 }
 
 .about > p:nth-child(1){
+    font-weight: 600;
     font-size: 30px;
     padding-bottom: 10px;
-    color: #434342;
+    font-family: "Baskervville";
 }
 
 .about > div:nth-child(2){
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 0px 0px 20px 0px;
     border-block: 2px solid #c9b297;
@@ -20,14 +22,17 @@
 .about > div:nth-child(2) .left{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 10px 180px 0px 0px;
+    font-size: 20px;
+    color: #434342;
     font-size: 20px;
 }
 
 .about > div:nth-child(2) .left p:nth-child(1){
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: black;
 }
 
 .about > div:nth-child(2) .left p:nth-child(4){
@@ -35,7 +40,7 @@
 }
 
 .about > div:nth-child(2) .left p:nth-child(1) span{
-    color: rgb(106, 160, 103);
+    color: #6aa067;
     
 }
 
@@ -62,6 +67,9 @@
 
 .about > div:nth-child(3) > h2:nth-child(2){ 
     margin-block: 10px;
+    font-size: 25px;
+    font-family: "Baskervville";
+    font-weight: 600;
 }
 
 .about > div:nth-child(3) > div{
@@ -71,15 +79,31 @@
     gap: 20px;
 }
 
+.about > div:nth-child(3) > p:nth-child(3){
+    color: #353535;
+}
+
 .about > div:nth-child(3) > div > div{
     display: flex;
     gap: 10px;
 }
 
+.about > div:nth-child(3) > div > div h3{
+    font-size: 20px;
+    font-family: "Baskervville";
+    font-weight: 600;
+}
+
+.about > div:nth-child(3) > div > div p{
+    color: #353535;
+    font-size: 17px;
+}
+
 .about > div:nth-child(3) > div > div svg{
     padding: 5px;
-    background-color: #cdcccc;
+    background-color: #d6d5d5;
     border-radius: 20%;
+    margin-top: 3px;
 }
 
 .about > div:nth-child(4){
@@ -117,8 +141,340 @@
     gap: 10px;
 }
 
+.about > div:nth-child(4) div h3{
+    font-family: "Baskervville";
+    font-weight: 500;
+}
+
 .about > div:nth-child(4) div p:nth-child(3){
     color: #2424e1;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width:1100px) {
+    .about > div:nth-child(2) .left{
+        padding: 10px 100px 0px 0px;
+        font-size: 18px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(1) {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .about .right > p:nth-child(2){
+        font-size: 15px;
+        padding-left: 10px;
+        margin: 0px;
+    }
+}
+
+@media (max-width:880px) {
+    .about > div:nth-child(2) .left{
+        padding: 10px 70px 0px 0px;
+    }
+
+    .about .right > p:nth-child(2){
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    .about > div:nth-child(2) .right{
+        padding: 10px 0px 0px;
+    }
+
+    .about > div:nth-child(3) > p:nth-child(1){
+        font-size: 13px;
+    }
+    .about > div:nth-child(4) > p:nth-child(1){
+        font-size: 13px;
+    }
+
+    .about > div:nth-child(4){
+        padding: 15px 0px;
+    }
+}
+
+@media (max-width:790px) {
+     .about > div:nth-child(2) .left {
+        padding: 10px 30px 0px 0px;
+    }
+
+    .about > div:nth-child(2) {
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .about > div:nth-child(3) > p:nth-child(3){
+        font-size: 17px;
+    }
+
+    .about > div:nth-child(3) > div > div p{
+        font-size: 15px;
+    }
+
+    .about > div:nth-child(4) ul{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+    .about > p:nth-child(1){
+        font-size: 23px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(1){
+        font-size: 20px;
+    }
+     .about > div:nth-child(2){
+        grid-template-columns: 1.5fr 1fr;
+     }
+
+     .about .right > p:nth-child(2){
+        font-size: 11px;
+     }
+     .about > div:nth-child(2) .left{
+        font-size: 17px;
+     }
+
+    .about > div:nth-child(3) > h2:nth-child(2){
+        font-size: 23px;
+    }
+
+    .about > div:nth-child(4) div{
+        width: 500px;
+    }
+    .about > div:nth-child(4) div h3{
+        font-size: 20px;
+    }
+
+    .about > div:nth-child(4) div > p:nth-child(2){
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 15px 3% 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .about {
+        padding: 15px 2% 10px;
+    }
+}
+
+@media (max-width:605px) {
+    .about > div:nth-child(2){
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .about > div:nth-child(2) .left {
+        font-size: 16px;
+        padding: 10px 20px 0px 0px
+    }
+
+    .about > div:nth-child(3) > p:nth-child(3){
+        font-size: 16px;
+    }
+
+    .about > p:nth-child(1){
+        font-size: 20px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(1){
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+     .about .right > p:nth-child(2){
+        font-size: 10px;
+        text-align: center;
+        padding-left: 0px;
+     }
+
+      .about > div:nth-child(3) > h2:nth-child(2){
+        font-size: 20px;
+      }
+
+    .about > div:nth-child(3) > div > div h3{
+        font-size: 17px;
+    }
+
+     .about > div:nth-child(3) > div > div p{
+        font-size: 14px;
+     }
+
+    .about > div:nth-child(4) ul {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:560px) {
+    .about > div:nth-child(4) div{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .about > div:nth-child(2) .left {
+        padding: 10px 10px 0px 0px;
+    }
+}
+
+@media (max-width:530px) {
+    .about > div:nth-child(3){
+        padding: 10px 0px;
+    }
+
+     .about > div:nth-child(4){
+        padding: 10px 0px;
+     }
+}
+
+@media (max-width:500px) {
+    .about > div:nth-child(2) .left {
+        font-size: 13px;
+        padding: 10px 5px 0px 0px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(1){
+        font-size: 15px;
+    }
+
+    .about > div:nth-child(3) > p:nth-child(3){
+        font-size: 13px;
+    }
+
+    .about > div:nth-child(4) div h3 {
+        font-size: 17px;
+    }
+
+     .about > div:nth-child(4) div > p:nth-child(2) {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:480px) {
+     .about > p:nth-child(1){
+        font-size: 18px;
+     }
+
+    .about > div:nth-child(3) > h2:nth-child(2){
+        font-size: 17px;
+    }
+
+    .about{
+        padding: 10px 1%;
+    }
+
+    .about > div:nth-child(2){
+        gap: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .about > div:nth-child(4) div > p:nth-child(2){
+        font-size: 14px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(4) {
+        margin-top: 10px;
+    }
+
+    .about > div:nth-child(3) > p:nth-child(1){
+        font-size: 11px;
+    }
+
+    .about > div:nth-child(4) > p:nth-child(1) {
+        font-size: 11px;
+    }
+
+     .about > div:nth-child(4) div{
+        padding: 15px 7px ;
+        margin-top: 10px;
+     }
+}
+
+@media (max-width:430px) {
+     .about > p:nth-child(1){
+        font-size: 16px;
+     }
+}
+
+@media (max-width:375px) {
+    .about > div:nth-child(2){
+        position: relative;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(4){
+        position: absolute;
+        bottom: 17%;
+        right: 20px;
+        font-size: 12px;
+    }
+
+     .about > div:nth-child(3) > h2:nth-child(2) {
+        font-size: 16px;
+        margin-block: 5px;
+    }
+
+    .about > div:nth-child(3) > div{
+        margin-block: 10px;
+    }
+
+     .about > div:nth-child(3) > div > div h3{
+        font-size: 15px;
+     }
+
+      .about > div:nth-child(3) > div > div p {
+        font-size: 12px;
+    }
+    .about > div:nth-child(2){
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(4){
+        bottom: 18%;
+        right: 0px;
+        font-size: 12px;
+    }
+
+    
+}
+
+@media (max-width:350px) {
+    .about > div:nth-child(2) .left p:nth-child(4){
+        bottom: 26%;
+        font-size: 10px;
+        right: 10px;
+    }
+
+     .about .right > p:nth-child(2){
+        font-size: 7px;
+     }
+
+      .about > div:nth-child(4) ul{
+        gap: 5px;
+        font-size: 10px;
+        flex-wrap: wrap;
+      }
+}
+
+@media (max-width:330px) {
+    .about > div:nth-child(2){
+        grid-template-columns: 2.5fr 1fr;
+        gap: 5px;
+    }
+
+    .about > div:nth-child(2) .left p:nth-child(4){
+        bottom: 40%;
+        font-size: 7px;
+        right: 10px;
+    }
+}
+
+@media (max-width:305px) {
+    .about > div:nth-child(2) .left p:nth-child(4){
+        bottom: 50%;
+    }
 }

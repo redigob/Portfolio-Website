@@ -1,37 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faLightbulb,faToggleOff, faToggleOn} from '@fortawesome/free-solid-svg-icons'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css'
-import { useContext, useState } from 'react'
-import { Portfoliocontext } from './Portfoliocontext'
+import {  useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const Navbar = () => {
-    const {darkmode,setDarkmode} = useContext(Portfoliocontext)
+const Navbar = ({scrollToSection}) => {
     const [fullbar,setFullbar] = useState(false)
-    console.log(darkmode)
+    
     return (
         <div className="navbar">
+           <div className='navbarinside'>
            <p>Rediet Gobezie</p>
            <div className='desktop'>
-              <p>Home</p>
-              <p>Work</p>
-              <p>About</p>
-              <p>Contact</p>
-              <FontAwesomeIcon icon={faLightbulb}/>
+              <p onClick={()=>(scrollToSection("hero"))}>Home</p>
+              <p onClick={()=>(scrollToSection("work"))}>Work</p>
+              <p onClick={()=>(scrollToSection("about"))}>About</p>
+              <p onClick={()=>(scrollToSection("contact"))}>Contact</p>
            </div>
         
            
            <div className='phone'>
             <div>
-                <FontAwesomeIcon icon={darkmode ? faToggleOn :faToggleOff} onClick={()=>setDarkmode(!darkmode)} />
                 <FontAwesomeIcon icon={faBars} onClick={()=>setFullbar(!fullbar)}/>
             </div>
             <div className={fullbar ? "full" :""}>
-                <p>Home</p>
-                <p>Work</p>
-                <p>About</p>
-                <p>Contact</p>
+                <p onClick={()=>(scrollToSection("hero"))}>Home</p>
+                <p onClick={()=>(scrollToSection("work"))}>Work</p>
+                <p onClick={()=>(scrollToSection("about"))}>About</p>
+                <p onClick={()=>(scrollToSection("contact"))}>Contact</p>
             </div>
            </div>
+         </div>
         </div>
     );
 }
