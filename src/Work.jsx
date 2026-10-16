@@ -19,8 +19,8 @@ const Work = () => {
                            <p>CSS</p>
                         </div>
                         <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
+                            <a className='link' target='_blank' href='https://jobnova-sigma.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/JobNova' >Source Code ↗</a>
                         </div>
                    </div>
                 </div>
@@ -34,11 +34,11 @@ const Work = () => {
                            <p>React</p>
                            <p>JavaScript</p>
                            <p>CSS</p>
-                        </div>
-                    <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
-                    </div>
+                  </div>
+                  <div className='links'>
+                            <a className='link' target='_blank' href='https://lumora-rediet4.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/BlogWebsite' >Source Code ↗</a>
+                  </div>
                 </div>
 
                 <div className='projects'>
@@ -52,8 +52,8 @@ const Work = () => {
                            <p>JavaScript</p>
                   </div>
                   <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
+                            <a className='link' target='_blank' href='https://weatherapp-rediet4.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/Weather-App' >Source Code ↗</a>
                   </div>
                 </div>
 
@@ -68,8 +68,8 @@ const Work = () => {
                            <p>JavaScript</p>
                   </div>
                   <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
+                            <a className='link' target='_blank' href='https://calculatorapp-rediet4.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/Calculator-App' >Source Code ↗</a>
                   </div>
                 </div>
  
@@ -84,8 +84,8 @@ const Work = () => {
                            <p>JavaScript</p>
                   </div>
                   <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
+                            <a className='link' target='_blank' href='https://todolistapp-nine.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/TodoList-App' >Source Code ↗</a>
                   </div>
                 </div>
 
@@ -95,13 +95,13 @@ const Work = () => {
                   <h2>Quiz App</h2>
                   <p>An interactive knowledge-testing experience.</p>
                   <div className='skills'>
-                           <p>HTML</p>
-                           <p>CSS</p>
+                           <p>React</p>
                            <p>JavaScript</p>
+                           <p>CSS</p>
                   </div>
                   <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
+                            <a className='link' target='_blank' href='https://quizapp-swart.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/Quiz-App' >Source Code ↗</a>
                   </div>
                 </div>
 
@@ -109,16 +109,16 @@ const Work = () => {
                   <p>07</p>
                   <img src='/images/Note.png'></img>
                   <h2>Note App</h2>
-                  <p>A clean blog platform to explore stories, ideas and knowledge</p>
+                  <p>A simple note-taking app to capture, organize, and manage your thoughts.</p>
                   <div className='skills'>
                            <p>HTML</p>
                            <p>CSS</p>
                            <p>JavaScript</p>
-                        </div>
-                    <div className='links'>
-                            <Link className='link' to={""}>Live Demo ↗</Link>
-                            <Link className='link' to={""}>Source Code ↗</Link>
-                    </div>
+                  </div>
+                  <div className='links'>
+                            <a className='link' target='_blank' href='https://noteapp-rediet4.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/Note-App' >Source Code ↗</a>
+                  </div>
                 </div>
             </div>
             <p>MORE IDEAS. MORE BUILDS</p>
