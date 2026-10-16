@@ -1,134 +1,73 @@
-# JobNova 💼
+# Personal Developer Portfolio
 
-**JobNova** is a job discovery platform designed to help students, unemployed people, and professionals find opportunities based on their **skills, experience, and career goals**.
+A personal portfolio website showcasing my projects, frontend development skills, and journey as a Computer Science student.
 
-Instead of simply browsing job listings, users can create a profile, discover relevant opportunities, save jobs, and keep track of their application progress in one place.
+## 🌿 About
+
+I'm a Computer Science student and frontend developer who enjoys turning ideas into functional, user-friendly digital experiences. I'm passionate about web development, software engineering, and continuously learning new technologies.
 
 ## ✨ Features
 
-- 🔍 **Search & Filter Jobs** — Find opportunities based on job type, work type, experience, category, and other criteria.
-- 🎯 **Skill-Based Matching** — Compare a user's skills with job requirements and calculate a match percentage.
-- 👤 **User Profile** — Create a profile and add skills, experience, and career preferences.
-- ❤️ **Save Jobs** — Save interesting opportunities and easily find them later.
-- 📝 **Application Tracking** — Keep track of jobs you have applied to.
-- 📊 **Application Status** — Track applications through stages such as Applied, Awaiting Response, Interview, Rejected, and Hired.
-- 🏢 **Company Discovery** — Browse companies and explore their available positions.
-- 🗺️ **Career Roadmap** — Explore career paths and plan your next steps.
-- 📱 **Responsive Interface** — Designed to provide a clean experience across different screen sizes.
+- **About Me** — Learn more about my background, interests, and approach to development.
+- **Projects** — Explore my work, including live demos and source code.
+- **Contact** — Find ways to connect with me.
+- **Responsive Design** — Designed to provide a smooth experience across different screen sizes.
+- **Minimalist UI** — A clean, premium editorial aesthetic with soft neutral colors and sage-green accents.
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
-- **React**
-- **JavaScript**
-- **CSS**
-- **React Router**
-- **JSON Server**
-- **Vite**
-- **Font Awesome**
+- React
+- JavaScript
+- HTML5
+- CSS3
+- React Router
 
-## 📂 Project Structure
+## 🚀 Featured Projects
 
-```text
-JobNova/
-├── public/
-├── data/
-├── src/
-│   ├── components/
-│   ├── ...
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+- **JobNova** — A job platform that helps people discover opportunities aligned with their skills and goals.
+- **Lumora** — A blog platform for exploring stories, ideas, and knowledge.
+- **Weather App** — An application for checking real-time weather updates.
+- **Calculator** — A simple, functional calculator.
+- **To-Do List** — A tool for organizing and managing tasks.
+- **Quiz App** — An interactive knowledge-testing experience.
+- **Note App** — A note-taking app for capturing and organizing thoughts.
 
-## 🚀 Getting Started
+## 💻 Run Locally
 
-### 1. Clone the repository
+1. Clone the repository:
 
-```bash
-git clone https://github.com/redigob/JobNova.git
-```
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-### 2. Navigate to the project
+2. Navigate to the project directory:
 
-```bash
-cd JobNova
-```
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
 
-### 3. Install dependencies
+3. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-### 4. Start the development server
+4. Start the development server:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-### 5. Start JSON Server
+5. Open the local URL displayed in your terminal.
 
-JobNova uses JSON Server for local job and application data.
+## 🌐 Live Website
 
-Run:
+[Visit My Portfolio](https://portfolio-website-rho-dun-10.vercel.app/)
 
-```bash
-json-server --watch data/db.json --port 8000
-```
+## 📬 Connect With Me
 
-Then open the local development URL provided by Vite in your browser.
-
-## 🎯 Project Goals
-
-JobNova was built to explore how a modern job platform could make job discovery more personalized.
-
-The main goal was to move beyond a simple job listing website and create an experience where users can:
-
-1. Build a profile around their skills and goals.
-2. Discover jobs that match their experience.
-3. Save opportunities they are interested in.
-4. Track applications after applying.
-5. Understand their progress throughout the job-search process.
-6. Explore possible career paths.
-
-## 🧠 What I Learned
-
-Building JobNova helped me strengthen my understanding of:
-
-- React component architecture
-- React Router and multi-page navigation
-- Context API and shared application state
-- Managing and filtering dynamic data
-- Skill-based matching logic
-- Working with JSON Server and APIs
-- Form handling and validation
-- Application state management
-- Pagination
-- Responsive UI design
-- Git and GitHub workflows
-- Debugging and solving real-world frontend problems
-
-## 🔮 Future Improvements
-
-Possible future improvements include:
-
-- Backend authentication
-- Real user accounts
-- A real database
-- Real-time job listings
-- Resume/CV generation
-- Employer accounts
-- Job posting functionality
-- Notifications
-- Advanced recommendation algorithms
-
-## 👩‍💻 Author
-
-**Rediet Gobezie**
-
-Computer Science student interested in building useful and practical software.
+- **GitHub:** [@redigob](https://github.com/redigob)
 
 ---
 
-⭐ If you find the project interesting, feel free to explore the repository.
+Built with curiosity, creativity, and a commitment to continuous learning.

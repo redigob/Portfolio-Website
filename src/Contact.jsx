@@ -30,7 +30,7 @@ const Contact = () => {
                         <div>
                             <p>LinkedIn</p>
                             <p>Let's connect professionally</p>
-                            <a href="www.linkedin.com/in/rediet-gobezie-a21b59283" target="_blank">Connect with me ↗</a>
+                            <a href="https://www.linkedin.com/in/rediet-gobezie-a21b59283/" target="_blank">Connect with me ↗</a>
                         </div>
                     </div>
 

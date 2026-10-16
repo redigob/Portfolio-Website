@@ -43,6 +43,22 @@ const Work = () => {
 
                 <div className='projects'>
                   <p>03</p>
+                  <img src='/images/portfolioimg.png'></img>
+                  <h2>Portfolio Website</h2>
+                  <p>A personal portfolio showcasing my projects, skills, and journey as a frontend developer.</p>
+                  <div className='skills'>
+                           <p>React</p>
+                           <p>JavaScript</p>
+                           <p>CSS</p>
+                  </div>
+                  <div className='links'>
+                            <a className='link' target='_blank' href='https://portfolio-website-rho-dun-10.vercel.app/'>Live Demo ↗</a>
+                            <a className='link' target='_blank' href='https://github.com/redigob/Portfolio-Website' >Source Code ↗</a>
+                  </div>
+                </div>
+
+                <div className='projects'>
+                  <p>04</p>
                   <img src='/images/Weather.png'></img>
                   <h2>Weather App</h2>
                   <p>Get real-time weather updates with a simple and clean interface.</p>
@@ -58,7 +74,7 @@ const Work = () => {
                 </div>
 
                 <div className='projects'>
-                  <p>04</p>
+                  <p>05</p>
                   <img src='/images/Calculator.png'></img>
                   <h2>Calculator</h2>
                   <p>A clean, fucntional calculator with a simple UI.</p>
@@ -74,7 +90,7 @@ const Work = () => {
                 </div>
  
                 <div className='projects'>
-                  <p>05</p>
+                  <p>06</p>
                   <img src='/images/Todo.png'></img>
                   <h2>To-Do List</h2>
                   <p>A simple tool for organizing your tasks.</p>
@@ -90,7 +106,7 @@ const Work = () => {
                 </div>
 
                 <div className='projects'>
-                  <p>06</p>
+                  <p>07</p>
                   <img src='/images/Quiz.png'></img>
                   <h2>Quiz App</h2>
                   <p>An interactive knowledge-testing experience.</p>
@@ -106,7 +122,7 @@ const Work = () => {
                 </div>
 
                 <div className='projects'>
-                  <p>07</p>
+                  <p>08</p>
                   <img src='/images/Note.png'></img>
                   <h2>Note App</h2>
                   <p>A simple note-taking app to capture, organize, and manage your thoughts.</p>
