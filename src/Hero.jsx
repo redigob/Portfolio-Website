@@ -18,7 +18,7 @@ const Hero = () => {
                 
                     <div className='buttons'>
                         <button onClick={()=>scrollToSection("work")}>View My Work</button>
-                        <button ><a href="/Rediet_Gobena_CV.pdf" download>Download CV ↓</a></button>
+                        <button ><a href="/Rediet_Gobezie_CV.pdf" download>Download CV ↓</a></button>
                     </div>
 
                     <div>
