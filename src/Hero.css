@@ -6,6 +6,8 @@
     padding-top: 60px;
 }
 
+
+
 .hero .first{
     position: relative;
     background-position: center;
@@ -38,11 +40,47 @@
     font-weight: 500;
 }
 
-.hero .first > div > div:nth-child(2) p:nth-child(2){
+.hero .first > div > div:nth-child(2) p:nth-child(2) {
     font-size: 100px;
     color: #384b45;
     font-family: "Arapey", serif;
     font-style: italic;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    border-right: 2px solid #65775d;
+    animation:
+        typing 4s steps(30) infinite,
+        blinks 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 270px;
+    }
+
+    70% {
+        width: 270px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blinks {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero .first > div > div:nth-child(2) > p:nth-child(3){
+    margin-top: -10px;
 }
 
 .hero .first > div > p:nth-child(3),.hero .first > div > p:nth-child(4){
@@ -68,13 +106,21 @@
     border: 1px solid #384b45;
     outline: none;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s linear;
+}
+
+.hero .first .buttons button a{
+    text-decoration: none;
+    background:linear-gradient(50deg,#2e492e,#5a7e5a,#2e492e,#5a7e5a) ;
+    color: transparent;
+    background-clip: text;
 }
 
 .hero .first .buttons button:hover{
-    transform: scale(1.06);
-    transition: transform 0.5s ease;
+    transform: scale(1.03);
+    transition: transform 0.2s linear;
 }
+
 
 .hero .first .buttons button:nth-child(1){
     background:linear-gradient(50deg,#2e492e,#5a7e5a,#2e492e,#5a7e5a) ;
@@ -131,6 +177,34 @@
         width: 100%;
         height: 100%;
     }
+
+    
+
+    
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        40% {
+            width: 160px;
+        }
+
+        70% {
+            width: 160px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+
+    .hero .first > div > div:nth-child(2) p:nth-child(2) {
+        animation:
+            typing 4s steps(30) infinite,
+            blinks 0.7s step-end infinite;
+    }
+
 }
 
 @media (max-width:930px) {
@@ -166,6 +240,26 @@
      .hero .first .buttons{
         margin-top: 10px;
      }
+
+     
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        40% {
+            width: 140px;
+        }
+
+        70% {
+            width: 140px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+
 }
 
 @media (max-width:750px) {
@@ -197,6 +291,31 @@
       .hero .first > div > p:nth-child(1){
         font-size: 15px;
       }
+
+      .hero .first > div > div:nth-child(2) p:nth-child(2) {
+            border-right: 1.5px solid #65775d;
+            animation:
+                typing 3s steps(30) infinite,
+                blinks 0.7s step-end infinite;
+        }
+
+      @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        30% {
+            width: 80px;
+        }
+
+        70% {
+            width: 80px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
 }
 
 @media (max-width:715px) {
@@ -300,6 +419,33 @@
      .hero .first > div > div:nth-child(2) p:nth-child(2){
         font-size: 25px;
      }
+
+     @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        40% {
+            width: 70px;
+        }
+
+        70% {
+            width: 70px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+
+    .hero .first > div > div:nth-child(2) p:nth-child(2) {
+            border-right: 1.5px solid #65775d;
+            animation:
+                typing 4s steps(30) infinite,
+                blinks 0.7s step-end infinite;
+    }
+
+     
 }
 
 @media (max-width:330px) {
@@ -325,10 +471,35 @@
     }
 
     .hero .first .buttons{
-        width: 30%;
+        width: 33%;
         font-size: 10px;
     }
     .hero .first .buttons button{
         padding: 3px 8px;
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        40% {
+            width: 40px;
+        }
+
+        70% {
+            width: 40px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+
+    .hero .first > div > div:nth-child(2) p:nth-child(2) {
+            border-right: 1px solid #65775d;
+            animation:
+                typing 3s steps(30) infinite,
+                blinks 0.7s step-end infinite;
     }
 }

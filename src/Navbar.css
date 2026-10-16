@@ -30,6 +30,20 @@
     padding-right: 20px;
 }
 
+.navbarinside .desktop p.selected{
+    transition: transform 0.1s linear;
+}
+
+.navbarinside .desktop p:hover{
+    transform: scale(1.03);
+}
+
+.navbarinside .desktop p.selected,.navbarinside .phone p.selected{
+    color: #b4853a;
+    transform: scale(1.03);
+    transition: transform 0.1s linear;
+}
+
 .navbarinside .phone{
     display: none;
     position: relative;
@@ -68,6 +82,14 @@
    transition: height 1s ease,opacity 1s ease;
 }
 
+.navbarinside .phone > div:nth-child(2) p{
+    transition: transform 0.1s ease;
+}
+
+.navbarinside .phone > div:nth-child(2) p:hover{
+   transform: scale(1.06);
+}
+
 .navbarinside .phone > div:nth-child(2) p,.navbar .phone > div:nth-child(1),.navbar > .desktop p,.navbar > .desktop svg{
     cursor: pointer;
 }
@@ -82,7 +104,32 @@
     }
 }
 
+@media (max-width:650px) {
+    .navbarinside{
+        margin-top: 10px;
+    }
+    .navbarinside .phone > div:nth-child(2).full {
+        font-size: 18px;
+        height: 100px;
+    }
+
+    .navbarinside .phone > div:nth-child(2) {
+        font-size: 18px;
+    }
+    .navbarinside > p:nth-child(1),.phone svg{
+        font-size: 15px;
+    }
+}
+
 @media (max-width:500px) {
+    .navbarinside .phone > div:nth-child(2).full {
+        font-size: 16px;
+        height: 90px;
+    }
+
+    .navbarinside .phone > div:nth-child(2) {
+        font-size: 16px;
+    }
     .navbarinside {
         padding: 10px 15px;
     }
@@ -120,6 +167,7 @@
 
     .navbarinside .phone > div:nth-child(2) {
         font-size: 10px;
+        padding: 10px;
     }
     .navbarinside > p:nth-child(1){
         font-size: 13px;

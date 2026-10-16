@@ -91,7 +91,9 @@
     color: #575757;
 }
 
-.contact  .left  div  a{
+
+
+.contact  .left > div > a{
     text-decoration: none;
     color: #2424e1;
 }

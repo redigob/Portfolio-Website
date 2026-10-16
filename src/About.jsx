@@ -1,8 +1,11 @@
-import { faLightbulb, faLocation, faLocationArrow, faLocationDot, faLocationPin, faPeopleGroup, faTools } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb,  faLocationDot, faPeopleGroup, faTools } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './About.css'
+import { useContext } from "react";
+import { Portfoliocontext } from "./Portfoliocontext";
 
 const About = () => {
+    const {scrollToSection} = useContext(Portfoliocontext)
     return (
         <div className="about">
            <p> My story and Approach </p>
@@ -68,7 +71,7 @@ const About = () => {
                 <h3>Good work happens together.</h3>
 
                 <p>I'm looking forward to learning from a team, contributing my skills, and helping turn meaningful ideas into better digital products.</p>
-                <p>Let's connect</p>
+                <p onClick={()=>{scrollToSection("contact")}}>Let's connect</p>
             </div>
 
            </div>

@@ -18,7 +18,7 @@ const Contact = () => {
                         <div>
                             <p>Email</p>
                             <p>For opportunities and inquiries</p>
-                            <a href="mailto:redietgob@gmail.com">Send an Email ↗</a>
+                            <a href="mailto:redietgob@gmail.com">Send me an email ↗</a>
                         </div>
 
                         <div>
@@ -35,8 +35,8 @@ const Contact = () => {
                     </div>
 
                     <div className="right">
-                       <p>Send a message</p>
-                       <p>Have somthing in mind? Tell me a little about it.</p>
+                       <p>Send me a message</p>
+                       <p>Have something in mind? Tell me a little about it.</p>
                        
                        <form action="https://formspree.io/f/mrpeynjz" method="POST">
                         <label htmlFor="name">Name</label>

@@ -1,5 +1,8 @@
+import { useContext } from 'react';
 import './Hero.css'
-const Hero = ({scrollToSection}) => {
+import { Portfoliocontext } from './Portfoliocontext';
+const Hero = () => {
+    const {scrollToSection} = useContext(Portfoliocontext)
     return (
         <div className="hero">
             <div className='first'>
@@ -15,7 +18,7 @@ const Hero = ({scrollToSection}) => {
                 
                     <div className='buttons'>
                         <button onClick={()=>scrollToSection("work")}>View My Work</button>
-                        <button onClick={()=>scrollToSection("about")}>About Me</button>
+                        <button ><a href="/Rediet_Gobena_CV.pdf" download>Download CV ↓</a></button>
                     </div>
 
                     <div>

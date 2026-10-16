@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Work.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookOpen, faBriefcase, faCloudSun } from '@fortawesome/free-solid-svg-icons'
  
 const Work = () => {
     return (

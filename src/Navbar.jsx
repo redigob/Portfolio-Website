@@ -1,21 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css'
-import {  useState } from 'react'
+import {  useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Portfoliocontext } from './Portfoliocontext'
 
-const Navbar = ({scrollToSection}) => {
-    const [fullbar,setFullbar] = useState(false)
-    
+const Navbar = () => {
+    const {scrollToSection,fullbar,setFullbar,selected} = useContext(Portfoliocontext)
+
     return (
         <div className="navbar">
            <div className='navbarinside'>
            <p>Rediet Gobezie</p>
            <div className='desktop'>
-              <p onClick={()=>(scrollToSection("hero"))}>Home</p>
-              <p onClick={()=>(scrollToSection("work"))}>Work</p>
-              <p onClick={()=>(scrollToSection("about"))}>About</p>
-              <p onClick={()=>(scrollToSection("contact"))}>Contact</p>
+              <p className={selected=="hero" ? "selected" :""} onClick={()=>(scrollToSection("hero"))}>Home</p>
+              <p className={selected=="work" ? "selected" :""} onClick={()=>(scrollToSection("work"))}>Work</p>
+              <p className={selected=="about" ? "selected" :""} onClick={()=>(scrollToSection("about"))}>About</p>
+              <p className={selected=="contact" ? "selected" :""} onClick={()=>(scrollToSection("contact"))}>Contact</p>
            </div>
         
            
@@ -24,10 +25,10 @@ const Navbar = ({scrollToSection}) => {
                 <FontAwesomeIcon icon={faBars} onClick={()=>setFullbar(!fullbar)}/>
             </div>
             <div className={fullbar ? "full" :""}>
-                <p onClick={()=>(scrollToSection("hero"))}>Home</p>
-                <p onClick={()=>(scrollToSection("work"))}>Work</p>
-                <p onClick={()=>(scrollToSection("about"))}>About</p>
-                <p onClick={()=>(scrollToSection("contact"))}>Contact</p>
+                <p className={selected=="hero" ? "selected" :""} onClick={()=>(scrollToSection("hero"))}>Home</p>
+                <p className={selected=="work" ? "selected" :""} onClick={()=>(scrollToSection("work"))}>Work</p>
+                <p className={selected=="about" ? "selected" :""} onClick={()=>(scrollToSection("about"))}>About</p>
+                <p className={selected=="contact" ? "selected" :""} onClick={()=>(scrollToSection("contact"))}>Contact</p>
             </div>
            </div>
          </div>
